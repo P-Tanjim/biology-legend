@@ -21,8 +21,12 @@ body {
   user-select: none;
   font-family: "english" sans-serif;
   background-color: #f0fdf4;
+  overflow-y: auto;
+  scroll-snap-type: y mandatory;
+  scroll-behavior: smooth;
+  scrollbar-width: thin;
+  scrollbar-color: #4caf50 #f0fdf4;
 }
-
 html, body {
   overflow-x: hidden;
 }
@@ -976,4 +980,5 @@ html, body {
     transform: translate(100%, 50%);
   }
 }
+
 
