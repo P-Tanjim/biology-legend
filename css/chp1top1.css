@@ -17,10 +17,11 @@
 }
 body {
   height: 100vh;
-  width: 100vw;
   user-select: none;
   font-family: "english" sans-serif;
   background-color: #f0fdf4;
+  max-width: 100%;
+	overflow-x: hidden;
 }
 /* 
 html,
@@ -985,3 +986,4 @@ body {
     width: auto;
   }
 }
+
