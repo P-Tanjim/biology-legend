@@ -1,0 +1,99 @@
+@font-face {
+    font-family: 'logo';
+    src: url('../fonts/logo.ttf') format('truetype');
+}
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    height: 100vh;
+    width: 100vw;
+    user-select: none;
+}
+
+.navbar-box{
+    height: 9vh;
+    width: 100vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+#logo{
+    height: 50%;
+    width: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 2vw;
+}
+#logo p{
+    font-family: 'logo';
+    font-size: 17px;
+    color: #99c97d;
+}
+
+#menu{
+    height: 50%;
+    width: 2%;
+    color: #4CAF50;
+    font-size: 25px;
+    margin-right: 4vw;
+    transform-origin: center;
+    transform: rotateY(0deg);
+    transition: ease 0.5s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#menu:hover{
+    transform-origin: center;
+    transform: rotateY(180deg);
+}
+
+@media (max-width: 480px) {
+    #logo p{
+        font-size: 15px;
+    }
+    #menu{
+        font-size: 20px;
+    }
+}
+
+.box{
+    height: 90%;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+}
+.red-box{
+    height: 70%;
+    width: 80%;
+    margin-top: 5vh;
+    background: #fff5f5;
+    box-shadow: 0 0 20px 3px rgba(230, 57, 70, 0.2), 0 10px 30px rgba(230, 57, 70, 0.3);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+}
+#content{
+    height: auto;
+    width: auto;
+    font-size: 25px;
+    background-color: #fadbdb;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5vh;
+    padding-left: 4vw;
+    padding-right: 4vw;
+    padding-top: 2.5vh;
+    padding-bottom: 2.5vh;
+}
+.red-box #text{
+    color: red;
+    margin-bottom: 30vh;
+    font-size: 20px;
+}
