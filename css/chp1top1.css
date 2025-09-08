@@ -42,7 +42,7 @@ body {
 
 .navbar-box {
   height: 9vh;
-  width: 100%;
+  width: 100vw;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -986,5 +986,6 @@ body {
     width: auto;
   }
 }
+
 
 
