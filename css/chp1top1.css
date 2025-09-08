@@ -27,6 +27,7 @@ body {
   scrollbar-width: thin;
   scrollbar-color: #4caf50 #f0fdf4;
 }
+
 html, body {
   overflow-x: hidden;
 }
@@ -980,5 +981,3 @@ html, body {
     transform: translate(100%, 50%);
   }
 }
-
-
