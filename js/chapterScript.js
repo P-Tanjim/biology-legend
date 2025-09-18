@@ -112,7 +112,7 @@ buttons.forEach(button => {
             }
         }
         
-        if (index === 1) {
+        if (index === 1 || index === 2 || index === 3) {
             topic(index);
         } else {
             redirect();
@@ -127,3 +127,4 @@ function redirect() {
     window.location.href = "no-content.html";
 
 }   
+
