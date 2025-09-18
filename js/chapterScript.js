@@ -1,6 +1,7 @@
 const container = document.querySelector(".card-wrapper");
 const chp1Topics = [
     "কোষ প্রাচীর",
+    "প্রোটোপ্লাজম",
     "প্লাজমামেমব্রেন",
     "রাইবোসোম",
     "গলগি বডি",
@@ -40,6 +41,7 @@ const banglaMotivationalQuotes = [
 
 const descriptions = [
   'কোষ প্রাচীর এর অবস্থান, রাসায়নিক গঠন ও কাজ সম্পর্কে জানতে পারবে',
+  'কোষের অভ্যন্তরে অর্ধস্বচ্ছ, আঠালো এবং জেলির ন্যায় অর্ধতরল, কলয়ডালধর্মী সজীব পদার্থকে প্রোটোপ্লাজম বলে।',
   `প্লাজমামেমব্রেন এর অবস্থান, রাসায়নিক গঠন ও কাজ সম্পর্কে জানতে পারবে`,
   'রাইবোসোম -এর অবস্থান, গঠন ও কাজ সম্পর্কে জানতে পারবে।',
   'গলগি বডি -এর অবস্থান, গঠন ও কাজ সম্পর্কে জানতে পারবে।',
@@ -112,19 +114,18 @@ buttons.forEach(button => {
             }
         }
         
-        if (index === 1 || index === 2 || index === 3) {
-            topic(index);
-        } else {
-            redirect();
-        }
+        // if (index === 1) {
+        //     topic(index);
+        // } else {
+        //     redirect();
+        // }
+        topic(index)
     });
 });
 
 function topic(topicNumber){
-    window.location.href = `./chp1topic/topic${topicNumber}.html`;
+    window.location.href = `../chp1topic/topic${topicNumber}.html`;
 }
 function redirect() {
     window.location.href = "no-content.html";
-
 }   
-
