@@ -11,12 +11,22 @@
     <link rel="stylesheet" href="./css/chapter.css" />
   </head>
   <body>
+
     <!-- navbar -->
-    <div class="navbar-box">
-      <div id="logo"><p>SANJIR's SIR</p></div>
-      <p class="chapter">Chapter 1</p>
-      <div id="menu"><i class="fa-solid fa-dna"></i></div>
-    </div>
+    <nav class="navbar">
+      <div class="logo">SANJIR's SIR</div>
+      <ul class="nav-links">
+        <li><a href="/index.html">Home</a></li>
+        <li><a href="#">About Me</a></li>
+        <li><a href="#">Contact Me</a></li>
+        <li><a onclick="goBack()">Go Back</a></li>
+      </ul>
+      <div class="burger" id="burger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </nav>
 
     <!-- chapter -->
     <div class="division">
@@ -63,7 +73,23 @@
         </div>
       </div> -->
     </div>
+    <div class="button">
+      <button onclick="goBack()" class="box">GO BACK</button>
+    </div>
 
     <script src="./js/chapterScript.js"></script>
   </body>
+  <script>
+    function goBack() {
+      window.history.back();
+    }
+
+    const burger = document.getElementById("burger");
+    const nav = document.querySelector(".nav-links");
+
+    burger.addEventListener("click", () => {
+      nav.classList.toggle("nav-active");
+      burger.classList.toggle("toggle");
+    });
+  </script>
 </html>
